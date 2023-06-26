@@ -1,0 +1,37 @@
+package com.company;
+class pen{
+    String color;
+    String type;
+    public void write(){
+        System.out.println("hlo class");
+    }
+    public void print(){
+        System.out.println(this.color);
+        System.out.println(this.type);
+
+    }
+    pen(){
+        System.out.println("constructor called");
+    }
+    pen(String a,String b){
+        this.color=a;
+        this.type=b;
+    }
+    pen(pen pen2){
+        this.type=pen2.type;
+        this.color=pen2.color;
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+     pen p1=new pen();
+        pen p2=new pen("yellow","gel");
+     p1.write();
+        System.out.println("1");
+     pen pen2=new pen(p1);
+        System.out.println("2");
+     pen2.print();
+p1.print();
+    }
+}
