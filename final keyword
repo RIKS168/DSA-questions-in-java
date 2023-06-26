@@ -1,0 +1,13 @@
+package com.company;
+
+
+public class Main {
+static final int x=10;
+    public static void main(String[] args) {
+        Main m=new Main();
+        System.out.println(Main.x);
+    }
+
+}
+
+
